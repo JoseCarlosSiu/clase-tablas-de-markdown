@@ -23,6 +23,8 @@ cat > comandos-linux-basicos.md << 'EOF'
 | `cd -`             | Regresa al directorio anterior en el que estabas. |
 | `ls`               | Lista los archivos y directorios dentro del directorio actual. |
 | `mkdir`            | Crea un nuevo directorio en la ubicación actual. |
+| `rmdir`            | Borra y elimina un directorio vacío del sistema. |
+
 
 ## Comandos básicos para archivos
 
