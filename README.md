@@ -21,6 +21,7 @@ cat > comandos-linux-basicos.md << 'EOF'
 |cd -|Vas al directorio anterior en el que estabas. Por ejemplo, si estás haciendo algo en uno y luego saltas a otro totalmente diferente para hacer una tarea concreta, con este vuelves al que estabas antes.|
 |ls|Te muestra una lista con los archivos y directorios que hay dentro del directorio actual en el que estás|
 |mkdir|Crea un nuevo directorio en el sitio donde estás del sistema de archivos.|
+|rmdir|Borra y elimina un directorio vacío del sistema.|
 
 # Comandos básicos para archivos
 
