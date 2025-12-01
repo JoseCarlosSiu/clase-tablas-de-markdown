@@ -1,70 +1,64 @@
-# clase-tablas-de-markdown
-
 cat > comandos-linux-basicos.md << 'EOF'
 # Comandos Básicos en Linux para Empezar
 
 ## Comandos que hay que conocer
 
-| Comando  | Descripción |
-|----------|-------------|
-| `man`    | Muestra el manual de usuarios de un comando específico. Si lo escribes primero y luego escribes otro comando, verás para qué sirve ese otro comando. |
-| `clear`  | Limpia el terminal y deja la ventana en blanco eliminando todo lo que se había hecho y escrito antes. |
-| `sudo`   | Abreviatura de "superuser do". Permite ejecutar una acción como superusuario (administrador), como instalar aplicaciones o modificar archivos. Se coloca antes del comando que quieres ejecutar con privilegios. |
-| `history`| Muestra una lista con el historial de comandos utilizados en la terminal durante la sesión actual. |
+|Comando|Descripción|
+|---|---|
+|man|Muestra el manual de usuarios de un comando específico. Si lo escribes primero y luego escribes otro comando, verás para qué sirve ese otro comando.|
+|clear|Este comando limpia el terminal y deja la ventana en blanco eliminando todo lo que se había hecho y escrito antes.|
+|sudo|Es la abreviatura de "superuser do" y es un comando que fuerza una acción como si fueras un superusuario. Esto quiere decir que harás acciones como administrador, con tareas que solo pueden realizarse si tienes credenciales de superusuario, como instalar aplicaciones, modificar archivos o configuraciones. Va antes del resto de comandos de la acción.|
+|history|Este comando muestra una lista con el historial de comandos que has utilizado en el terminal durante la última sesión.|
 
 ## Comandos básicos de directorios
 
-| Comando            | Descripción |
-|--------------------|-------------|
-| `pwd`              | Muestra el directorio actual en el que te encuentras. |
-| `cd`               | Change Directory. Cambia de directorio. Si se usa solo, te lleva al directorio personal (Home). |
-| `cd dirección/`    | Te permite ir a un directorio concreto. |
-| `cd ..`            | Sube al directorio padre (nivel superior). |
-| `cd -`             | Regresa al directorio anterior en el que estabas. |
-| `ls`               | Lista los archivos y directorios dentro del directorio actual. |
-| `mkdir`            | Crea un nuevo directorio en la ubicación actual. |
-| `rmdir`            | Borra y elimina un directorio vacío del sistema. |
+|Comando|descripción|
+|---|---|
+|pwd|Te muestra el directorio en el que estás ahora mismo, y así poder saber la estructura de directorios del sistema en el que estás|
+|cd|El nombre significa Change Directory, y sirve para cambiar de directorio. Esto quiere decir que sirve para cambiar de carpeta. Si escribes CD a solas, irás a tu Home, tu carpeta personal.|
+|cd dirección/directorio|Te permite ir a un directorio concreto|
+|cd ..|Vas al documento padre. Esto quiere decir que si estás en una subcarpeta, pasarás a la carpeta anterior del que estabas.|
+|cd -|Vas al directorio anterior en el que estabas. Por ejemplo, si estás haciendo algo en uno y luego saltas a otro totalmente diferente para hacer una tarea concreta, con este vuelves al que estabas antes.|
+|ls|Te muestra una lista con los archivos y directorios que hay dentro del directorio actual en el que estás|
+|mkdir|Crea un nuevo directorio en el sitio donde estás del sistema de archivos.|
 
+# Comandos básicos para archivos
 
-## Comandos básicos para archivos
+| comando    | descripción    |
+|---|---|
+| find    | Sirve para buscar archivos y directorios en el sistema.    |
+| cp    | Sirve para copiar archivos y directorios de un lugar a otro, tendrás que usarlo escribiendo lo que quieres copiar y a dónde. Por ejemplo, usando el formato `cp archivo_a_copiar.txt nuevo_archivo.txt`    |
+| mv    | Sirve para mover archivos y directorios de un lugar a otro, tendrás que usarlo escribiendo lo que quieres mover y a dónde, de forma que desaparezca de donde estaba antes. Puedes usar `mv archivo_origen carpeta_destino/`    |
+| rm    | Elimina archivos y directorios.    |
+| wget    | Sirve para descargar y recuperar contenidos de Internet, escribiendo el comando seguido de la dirección del programa que quieras.    |
+| head    | Busca las primeras líneas de código de un archivo, para poder identificarlo bien.    |
+| tail    | Te muestra también el contenido de un archivo, mostrando solo las 10 últimas líneas de código de este.    |
+| grep    | busca patrones dentro de un archivo    |
+| cat    | Sirve para visualizar, unir y crear archivos. Por ejemplo, si lo escribes antes del nombre de un archivo, verás el contenido de este archivo.    |
+| wc    | Te hace un recuento de las palabras que tiene un archivo de texto.    |
+| less    | Reduce la cantidad de contenido de un archivo que se ve, para verlo una página a la vez y que sea más fácil de leer.    |
+| touch    | Te permite actualizar los tiempos de acceso y modificación de unos archivos, como por ejemplo la última vez que editaste un archivo. Sin embargo, también sirve para crear un nuevo archivo en blanco.    |
+| chmod    | Te permite cambiar el modo de un archivo, pudiendo añadir o quitar el modo r (leer), w (escribir) o x (ejecutar). Por ejemplo, con `chmod +x script`    |
+| unzip    | Te permite descomprimir un archivo comprimido en formato zip. Después del comando tendrás que escribir el nombre del archivo.    |
+| ./    | Si escribes este comando seguido de un nombre de archivo, ejecutarás ese archivo con el programa compatible que tengas instalado.    |
+| kill    | Si hay algún programa que no te responde, con el comando kill seguido del nombre del programa puedes forzar su cierre.    |
+| shred    | Este comando seguido del nombre de un archivo borrará el contenido de este archivo de forma repetida para que sea casi imposible de recuperarlo. No solo lo borras, también lo destrozas para que no se recupere.    |
 
-| Comando | Descripción |
-|---------|-------------|
-| `find`  | Busca archivos y directorios en el sistema. |
-| `cp`    | Copia archivos o directorios. Ejemplo: `cp archivo.txt destino/` |
-| `mv`    | Mueve o renombra archivos y directorios. Ejemplo: `mv archivo carpeta/` |
-| `rm`    | Elimina archivos y directorios. |
-| `wget`  | Descarga archivos desde Internet. |
-| `head`  | Muestra las primeras líneas de un archivo. |
-| `tail`  | Muestra las últimas líneas de un archivo (por defecto 10). |
-| `grep`  | Busca patrones de texto dentro de archivos. |
-| `cat`   | Muestra, concatena o crea archivos. |
-| `wc`    | Cuenta líneas, palabras y caracteres en un archivo. |
-| `less`  | Muestra el contenido de un archivo página a página. |
-| `touch` | Crea un archivo vacío o actualiza sus marcas de tiempo. |
-| `chmod` | Cambia los permisos de un archivo (lectura, escritura, ejecución). Ejemplo: `chmod +x script.sh` |
-| `unzip` | Descomprime archivos ZIP. |
-| `./`    | Ejecuta un archivo ejecutable en el directorio actual. Ejemplo: `./programa` |
-| `kill`  | Finaliza un proceso por su identificador (PID). |
-| `shred` | Sobrescribe un archivo múltiples veces para hacer imposible su recuperación. |
+# Otros comandos
 
-## Otros comandos
-
-| Comando     | Descripción |
-|-------------|-------------|
-| `alias`     | Define un alias temporal para comandos. Ejemplo: `alias ll="ls -la"` |
-| `unalias`   | Elimina un alias previamente definido. |
-| `htop`      | Muestra los procesos en ejecición y el uso de recursos del sistema (interfaz interactiva). |
-| `ps`        | Muestra los procesos de la sesión actual del terminal. |
-| `ping`      | Verifica la conectividad con una dirección IP o dominio. |
-| `echo`      | Muestra un mensaje en la terminal. Ejemplo: `echo "Hola"` |
-| `passwd`    | Cambia la contraseña del usuario actual. |
-| `whoami`    | Muestra el nombre del usuario actual. |
-| `uname`     | Muestra información del sistema. Usa `uname -a` para ver todos los detalles. |
-| `neofetch`  | Muestra información del sistema con un logo ASCII de la distribución (requiere instalación). |
-| `whatis`    | Muestra una breve descripción de un comando o programa. |
-| `exit`      | Cierra la sesión de terminal. |
-| `shutdown`  | Apaga el sistema. Ejemplo: `shutdown now` para apagar inmediatamente. |
-
-**Nota:** Los comandos deben usarse con precaución, especialmente aquellos que modifican o eliminan archivos (`rm`, `shred`, `shutdown`, etc.).
+|comando    | descripción    |
+|---|---|
+|alias    | Te permite definir alias temporales en tu sesión de la consola, pudiendo sustituir una palabra por una serie de comandos. El parámetro a usar es `alias NAME="VALUE"` |
+|unalias    | Te sirve para quitar el alias que hayas configurado, escribiendo el comando seguido del alias que hayas creado.    |
+|htop    | Te permite ver en el terminal los procesos que tienes en funcionamiento para gestionar los recursos de tu ordenador.    |
+|ps    | Con este comando puedes visualizar los procesos que se ejecutan en tu sesión del terminal. Te muestra un identificador de cada proceso e información útil sobre él.    |
+|ping    | Te dice tu dirección IP, o la de una web que escribas después.    |
+|echo    | Te permite mostrar un texto definido por ti en el terminal, escribiendo el comando seguido del mensaje entre comillas.    |
+|passwd    | Te permite cambiar la contraseña de tu cuenta de usuario. Al escribir solo el comando, te dirá primero que escribas tu contraseña actual y luego la nueva.    |
+|whoami    | Te muestra el nombre de usuario que tienes ahora mismo, por si no recuerdas en qué sesión estás.    |
+|uname    | Te muestra la información sobre la distribución de GNU/Linux que estás usando y su versión, además de otra información útil del sistema operativo. Sobre todo puedes usarlo con `uname -a` para mostrar toda la información.    |
+|neofetch    | Te muestra la información sobre tu sistema, la distribución que usas, la versión del kernel, del shell y de tu hardware. Todo ello con un logotipo ASCII de tu distro. Necesitaras instalar antes el paquete.    |
+|whatis    | Este comando seguido de otro comando o el nombre de un programa te muestra su descripción, para cuando no sabes qué hace un comando o qué es un programa.    |
+|exit    | Cierra la sesión y cierra el terminal    |
+|shutdown    | Te permite apagar el ordenador desde el terminal. Puedes usarlo junto a now, con el comando `shutdown now` para apagar ahora mismo, o cambiar now por una fecha para programar el apagado.    |
 EOF
