@@ -61,4 +61,4 @@ cat > comandos-linux-basicos.md << 'EOF'
 |whatis    | Este comando seguido de otro comando o el nombre de un programa te muestra su descripción, para cuando no sabes qué hace un comando o qué es un programa.    |
 |exit    | Cierra la sesión y cierra el terminal    |
 |shutdown    | Te permite apagar el ordenador desde el terminal. Puedes usarlo junto a now, con el comando `shutdown now` para apagar ahora mismo, o cambiar now por una fecha para programar el apagado.    |
-EOF
+
